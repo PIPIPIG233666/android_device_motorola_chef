@@ -15,7 +15,7 @@
 #
 
 # Vendor blobs
-$(call inherit-product-if-exists, vendor/motorola/payton/payton-vendor.mk)
+$(call inherit-product-if-exists, vendor/motorola/chef/chef-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -55,7 +55,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.payton.rc
+    init.chef.rc
 
 # Keymaster HAL
 PRODUCT_PACKAGES += \
@@ -83,7 +83,7 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/recovery/root/init.recovery.payton.rc:root/init.recovery.payton.rc
+    $(LOCAL_PATH)/recovery/root/init.recovery.chef.rc:root/init.recovery.chef.rc
 
 # Sensors
 PRODUCT_COPY_FILES += \
